@@ -1,0 +1,15 @@
+<div>
+  <%# link_to '<h1 class="title">Progress Bar</h1>'.html_safe, root_path %>
+  <%# link_to raw('<h1 class="title">Progress Bar</h1>'), root_path %>
+  <%= link_to root_path do %>
+    <h1 class="title">Progress Bar</h1>
+  <% end %>
+
+  <%# link_to "First", first_path %>
+  <%= link_to "First", controller: :home, action: :first %>
+  <%# link_to "Second", second_path  %>
+  <%= link_to "Second", controller: :home, action: :second %>
+  <%= link_to "Posts/2", controller: :home, action: :show_post, id: 2, name: 'progress_bar' %>
+
+  <%= @testname %>
+</div>

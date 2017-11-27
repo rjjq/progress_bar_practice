@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ProgressBar</title>
+    <title>Progress Bar 進度條</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -9,6 +9,13 @@
   </head>
 
   <body>
+    <% if @nav_flag %>
+      <%= render :partial => 'layouts/nav' %>
+    <% end %>
+
     <%= yield %>
+
+    <%= render :partial => 'layouts/footer' %>
+
   </body>
 </html>
